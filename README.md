@@ -40,6 +40,14 @@ The test results will be displayed in the console, indicating whether the tests 
    ```bash
    npm run test
    ```
+
+
+   # Visit the deployed page
+
+  ## Just click in the following link!
+
+
+  https://jobs-board-seven.vercel.app/
     
 
 
