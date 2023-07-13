@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Job Listings Web Application
 
-## Getting Started
+This is a web application that displays job listings. Users can filter the jobs by type and sort them by publication date. The application fetches job data from an API and provides a user-friendly interface to view and interact with the job listings.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Filter job listings by type (All, Full-time, Part-time).
+- Sort job listings by publication date in ascending or descending order.
+- Display job title, type, description, and publication date.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone <repository-url>
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install the dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+  ## Run the Project 
+1. To run the project in a local host, use the following command:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Testing
+
+The application includes unit tests and integration tests to ensure the correctness of its functionality. The tests are written using the Jest testing framework and the React Testing Library.
+
+The test results will be displayed in the console, indicating whether the tests pass or fail.
+
+
+   ```bash
+   npm run test
+   ```
+    
+
+
+
+
+## Technologies Used
+
+- React: JavaScript library for building user interfaces.
+- Axios: Promise-based HTTP client for making API requests.
+- Mock Service Worker: Mocking library for intercepting and mocking API requests during development.
+- Tailwind CSS: Utility-first CSS framework for styling the UI.
+- Jest and React Testing Library: Testing frameworks for unit and integration testing.
+
+## Folder Structure
+
+- src/: Contains the source code for the application.
+- pages/: Reusable React components used in the application.
+- mocks/: Mock server setup for intercepting API requests during development.
+- api/: API service for fetching job data.
+- index.tsx: Main entry point for the application.
+- public/: Static assets and the HTML template for the application.
+- build/: Generated optimized production build files.
